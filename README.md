@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/banner.svg" alt="novel-insight banner" width="100%"></p>
+
 # Novel Insight · 网文人情世故分析工具
 
 本地运行的网页应用:投入一本网络小说(txt/epub),自动按章节切分、过滤低密度章节、调用 LLM 做**人情世故(行为层 6 维)**与**对话技巧(逐句精读)**分析,产出结构化的「做派卡」「对话卡」知识库,并跨章节聚合出人物画像、情境聚类、长期账时间线。单用户本地使用,数据存本地 SQLite,可一键导出 Markdown。

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 320" font-family="'Noto Serif SC','Songti SC',ui-serif,serif">
+  <defs>
+    <linearGradient id="ni-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#efe6cf"/><stop offset="1" stop-color="#e3d2ac"/>
+    </linearGradient>
+    <linearGradient id="ni-ink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5b4a34"/><stop offset="1" stop-color="#8a5a2b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="320" fill="url(#ni-bg)"/>
+  <!-- 纸纹淡线 -->
+  <g stroke="#c9b58a" stroke-width="1" opacity="0.25">
+    <line x1="0" y1="80" x2="1280" y2="80"/><line x1="0" y1="240" x2="1280" y2="240"/>
+  </g>
+  <!-- 打开的书 + 分析节点 -->
+  <g transform="translate(110,96)">
+    <!-- 书页 -->
+    <path d="M4 24 Q62 6 120 18 L120 118 Q62 106 4 124 Z" fill="#fffdf6" stroke="#c8a86f" stroke-width="2"/>
+    <path d="M236 24 Q178 6 120 18 L120 118 Q178 106 236 124 Z" fill="#faf3e2" stroke="#c8a86f" stroke-width="2"/>
+    <line x1="120" y1="18" x2="120" y2="118" stroke="#c8a86f" stroke-width="2"/>
+    <g stroke="#c2a375" stroke-width="2" stroke-linecap="round" opacity="0.8">
+      <line x1="26" y1="46" x2="98" y2="40"/><line x1="26" y1="62" x2="98" y2="56"/><line x1="26" y1="78" x2="86" y2="74"/>
+      <line x1="142" y1="40" x2="214" y2="46"/><line x1="142" y1="56" x2="214" y2="62"/><line x1="142" y1="74" x2="202" y2="78"/>
+    </g>
+    <!-- 人物关系节点(从书里"读"出来) -->
+    <g transform="translate(150,-40)">
+      <line x1="0" y1="20" x2="40" y2="-6" stroke="#B23A2E" stroke-width="2" opacity="0.6"/>
+      <line x1="0" y1="20" x2="46" y2="44" stroke="#2f7d6e" stroke-width="2" opacity="0.6"/>
+      <line x1="40" y1="-6" x2="46" y2="44" stroke="#c2a375" stroke-width="2" opacity="0.6"/>
+      <circle cx="0" cy="20" r="9" fill="#B23A2E"/>
+      <circle cx="40" cy="-6" r="7" fill="#2f7d6e"/>
+      <circle cx="46" cy="44" r="7" fill="#8a5a2b"/>
+    </g>
+  </g>
+  <!-- 文字 -->
+  <g transform="translate(380,0)">
+    <text x="0" y="140" font-size="66" font-weight="800" fill="url(#ni-ink)">Novel Insight</text>
+    <text x="4" y="186" font-size="25" fill="#5b4a34">网文人情世故分析 · 把一本书拆成做派卡 / 对话卡</text>
+    <text x="4" y="220" font-size="18" fill="#8a7554">Chapter-split + LLM analysis of social dynamics &amp; dialogue craft</text>
+    <g font-size="17" font-weight="600">
+      <rect x="4" y="242" width="112" height="34" rx="17" fill="#8a5a2b" opacity="0.14"/><text x="60" y="264" fill="#6b4520" text-anchor="middle">章节切分</text>
+      <rect x="126" y="242" width="130" height="34" rx="17" fill="#8a5a2b" opacity="0.14"/><text x="191" y="264" fill="#6b4520" text-anchor="middle">6 维行为</text>
+      <rect x="266" y="242" width="130" height="34" rx="17" fill="#8a5a2b" opacity="0.14"/><text x="331" y="264" fill="#6b4520" text-anchor="middle">对话精读</text>
+    </g>
+  </g>
+</svg>

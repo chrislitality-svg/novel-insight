@@ -28,7 +28,7 @@
       <el-tab-pane label="从文件夹导入(已分章)" name="folder">
         <el-form label-width="90px" style="max-width: 720px">
           <el-form-item label="文件夹路径">
-            <el-input v-model="folderPath" placeholder="如 C:\Users\hycst\novel_dl\书名" clearable />
+            <el-input v-model="folderPath" placeholder="如 D:\novels\书名" clearable />
           </el-form-item>
           <el-form-item label="书名(可选)">
             <el-input v-model="folderTitle" placeholder="留空则用文件夹名" clearable />

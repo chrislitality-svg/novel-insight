@@ -10,7 +10,7 @@
 
 - Python 3.11+
 - Node.js 18+(构建/开发前端用)
-- 一个 LLM API Key(默认 DeepSeek,兼容 OpenAI/Claude)
+- 一个 LLM API Key(默认 DeepSeek,兼容 OpenAI / Claude / Qwen)
 
 ## 二、目录结构
 
@@ -52,18 +52,19 @@ npm install
 
 ## 四、配置 .env
 
-复制示例并填入 API Key(**代码里不存任何 Key,一律从 .env 读**):
+在项目根目录创建 `.env` 文本文件并填入 API Key(**代码里不存任何 Key,一律从 .env 读**,仓库未附带模板文件):
 
 ```powershell
-copy .env.example .env        # 已有 .env 则跳过
+notepad .env    # 或任意编辑器新建 .env
 ```
 
 关键项:
 
 | 变量 | 说明 |
 |---|---|
-| `LLM_PROVIDER` | `deepseek` / `openai` / `claude`,切换 provider 只改这里 |
-| `DEEPSEEK_API_KEY` | **必填**,你的 DeepSeek Key |
+| `LLM_PROVIDER` | `deepseek` / `openai` / `claude` / `qwen`,切换 provider 只改这里 |
+| `DEEPSEEK_API_KEY` | provider 为 deepseek 时**必填**,你的 DeepSeek Key |
+| `OPENAI_API_KEY` / `CLAUDE_API_KEY` / `QWEN_API_KEY` | 对应 provider 的 Key(各自另有 `_BASE_URL` / `_FAST_MODEL` / `_DEEP_MODEL` 可覆盖默认值) |
 | `DEEPSEEK_FAST_MODEL` | 行为层用,默认 `deepseek-chat`(V3,支持 JSON mode) |
 | `DEEPSEEK_DEEP_MODEL` | 对话精读用,默认 `deepseek-reasoner`(R1) |
 | `LLM_CONCURRENCY` | 并发上限,默认 5 |
